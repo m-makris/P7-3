@@ -1,0 +1,39 @@
+// Example program
+#include <iostream>
+#include <string>
+using namespace std;
+
+int(first_digit)(int n){
+    n = abs(n);
+    while (n >= 10) {
+        n /= 10;
+    }
+return n;
+} 
+    int last_digit(int n) {
+    n = abs(n);
+    return n % 10;
+}
+
+int digits(int n){
+    if(n == 0) return 1;
+    n = abs(n);
+    int count = 0;
+    while (n > 0){
+        n /= 10;
+        count++;
+    }
+        return count++;
+    }
+
+
+int main() {
+   cout << "Enter number or Q to quit:" ;
+int number;
+if (cin >> number) {
+    cout << "First digit: " << first_digit(number) << endl;
+    cout << "last digit: " << last_digit(number) << endl;
+    cout << "number of digit: " << digits(number) << endl;
+}
+}
+
